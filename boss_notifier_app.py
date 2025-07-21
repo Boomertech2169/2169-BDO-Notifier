@@ -122,7 +122,7 @@ class NotificationWorker(QThread):
         self._is_active = active
 
     def run(self):
-        while True:
+        while not self.isInterruptionRequested(): # Thread sonlanma isteği gelene kadar devam et
             current_time = datetime.now()
             
             # --- Canlı Bilgi Güncelleme Mantığı ---
@@ -224,7 +224,12 @@ class NotificationWorker(QThread):
                 if s_time > (current_time - timedelta(minutes=15))
             }
 
-            time.sleep(15) # Her 10 saniyede bir kontrol et
+            for _ in range(15): # 15 saniye beklemek için 15 kez 1 saniye bekle
+                if self.isInterruptionRequested():
+                    break # Eğer sonlanma isteği gelirse döngüyü kır
+                time.sleep(1) # Her 1 saniyede bir kontrol et
+
+        print("NotificationWorker thread'i sonlandı.") # Debug için eklendi
 
 # --- Ana Uygulama Penceresi ---
 class BossNotifierApp(QMainWindow):
@@ -233,6 +238,8 @@ class BossNotifierApp(QMainWindow):
         self.setWindowTitle("Boss Notifier")
         self.setGeometry(100, 100, 650, 550) # x, y, width, height
         self.setMinimumSize(600, 500)
+
+        QApplication.instance().aboutToQuit.connect(self.on_app_quit)
 
         self.boss_data = load_boss_data(BOSS_DATA_FILE)
         if self.boss_data is None:
@@ -400,13 +407,43 @@ class BossNotifierApp(QMainWindow):
         self.showNormal() # Pencereyi normal boyutunda göster
         self.activateWindow() # Pencereyi öne getir
         print("Uygulama penceresi gösterildi.")
+    
+    def on_app_quit(self):
+        """Uygulama tamamen kapanmadan önce çağrılan son temizlik metodu."""
+        print("Uygulama kapanıyor. Son temizlik yapılıyor...")
+        
+        # Eğer worker thread hala çalışıyorsa, onu durdur
+        if self.worker_thread.isRunning():
+            self.worker_thread.quit() # Thread'e kapatma sinyali gönder
+            # Thread'in bitmesini bekle, belirli bir süre tanıyarak
+            # Eğer bu süre içinde bitmezse, zorla sonlandır (nadiren gerekli olabilir)
+            if not self.worker_thread.wait(3000): # Max 3 saniye bekle
+                print("Uyarı: Worker thread belirlenen sürede sonlanamadı. Zorla kapatılıyor.")
+                self.worker_thread.terminate() # Son çare olarak zorla sonlandır
+        else:
+            print("Worker thread zaten çalışmıyordu.")
+
+        # Sistem tepsisi ikonunu gizle ve yok et (kaynakları serbest bırakmak için)
+        if self.tray_icon is not None:
+            self.tray_icon.hide()
+            del self.tray_icon 
+            self.tray_icon = None # Referansı temizle
+            print("Sistem tepsisi ikonu gizlendi ve serbest bırakıldı.")
+
+        print("Son temizlik tamamlandı.")
 
     def quit_app(self):
-        """Uygulamayı tamamen kapatır."""
-        self.tray_icon.hide() # Sistem tepsisi ikonunu gizle
-        self.worker_thread.quit() # Thread'i güvenli bir şekilde sonlandır
-        self.worker_thread.wait() # Thread'in bitmesini bekle
-        QApplication.quit() # PyQt uygulamasını kapat
+        """Sistem tepsisi menüsünden 'Exit' seçildiğinde çağrılır."""
+        print("Sistem tepsisi menüsünden çıkış istendi.")
+        # Ana pencereyi gizle (eğer görünürse)
+        self.hide() 
+        # tray_icon'ı hemen gizlemek, tray'den kaybolmasını hızlandırır
+        if self.tray_icon is not None:
+             self.tray_icon.hide()
+        
+        # QApplication.quit() çağrıldığında, on_app_quit sinyali tetiklenir ve o gerekli temizliği yapar.
+        QApplication.quit()
+        print("QApplication.quit() çağrıldı.")
 
 
 if __name__ == "__main__":
