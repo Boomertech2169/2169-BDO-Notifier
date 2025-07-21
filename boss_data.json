@@ -1,0 +1,606 @@
+[
+  {
+    "id": "garmoth",
+    "name": "Garmoth",
+    "description": "World boss Garmoth.",
+    "icon_path": "icons/garmoth.png",
+    "spawn_times": [
+      {
+        "day": "Monday",
+        "time": "00:15"
+      },
+      {
+        "day": "Monday",
+        "time": "15:00"
+      },
+      {
+        "day": "Tuesday",
+        "time": "00:15"
+      },
+      {
+        "day": "Tuesday",
+        "time": "15:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "00:15"
+      },
+      {
+        "day": "Wednesday",
+        "time": "15:00"
+      },
+      {
+        "day": "Thursday",
+        "time": "00:15"
+      },
+      {
+        "day": "Thursday",
+        "time": "15:00"
+      },
+      {
+        "day": "Friday",
+        "time": "00:15"
+      },
+      {
+        "day": "Friday",
+        "time": "15:00"
+      },
+      {
+        "day": "Saturday",
+        "time": "00:15"
+      },
+      {
+        "day": "Saturday",
+        "time": "15:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "15:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "20:15"
+      }
+    ]
+  },
+  {
+    "id": "karanda",
+    "name": "Karanda",
+    "description": "World boss Karanda.",
+    "icon_path": "icons/karanda.png",
+    "spawn_times": [
+      {
+        "day": "Monday",
+        "time": "01:15"
+      },
+      {
+        "day": "Monday",
+        "time": "03:00"
+      },
+      {
+        "day": "Tuesday",
+        "time": "01:15"
+      },
+      {
+        "day": "Tuesday",
+        "time": "20:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "03:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "10:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "23:15"
+      },
+      {
+        "day": "Friday",
+        "time": "01:15"
+      },
+      {
+        "day": "Friday",
+        "time": "06:00"
+      },
+      {
+        "day": "Friday",
+        "time": "13:00"
+      },
+      {
+        "day": "Saturday",
+        "time": "01:15"
+      },
+      {
+        "day": "Saturday",
+        "time": "20:00"
+      }
+    ]
+  },
+  {
+    "id": "kutum",
+    "name": "Kutum",
+    "description": "World boss Kutum.",
+    "icon_path": "icons/kutum.png",
+    "spawn_times": [
+      {
+        "day": "Monday",
+        "time": "01:15"
+      },
+      {
+        "day": "Monday",
+        "time": "17:00"
+      },
+      {
+        "day": "Tuesday",
+        "time": "03:00"
+      },
+      {
+        "day": "Tuesday",
+        "time": "13:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "01:15"
+      },
+      {
+        "day": "Wednesday",
+        "time": "17:00"
+      },
+      {
+        "day": "Thursday",
+        "time": "03:00"
+      },
+      {
+        "day": "Thursday",
+        "time": "10:00"
+      },
+      {
+        "day": "Thursday",
+        "time": "20:00"
+      },
+      {
+        "day": "Friday",
+        "time": "10:00"
+      },
+      {
+        "day": "Friday",
+        "time": "23:15"
+      },
+      {
+        "day": "Sunday",
+        "time": "01:15"
+      },
+      {
+        "day": "Sunday",
+        "time": "06:00"
+      }
+    ]
+  },
+  {
+    "id": "uturi",
+    "name": "Uturi",
+    "description": "World boss Uturi.",
+    "icon_path": "icons/uturi.png",
+    "spawn_times": [
+      {
+        "day": "Monday",
+        "time": "01:15"
+      },
+      {
+        "day": "Monday",
+        "time": "17:00"
+      },
+      {
+        "day": "Monday",
+        "time": "23:15"
+      },
+      {
+        "day": "Tuesday",
+        "time": "20:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "23:15"
+      },
+      {
+        "day": "Thursday",
+        "time": "17:00"
+      },
+      {
+        "day": "Thursday",
+        "time": "23:15"
+      },
+      {
+        "day": "Friday",
+        "time": "17:00"
+      },
+      {
+        "day": "Friday",
+        "time": "23:15"
+      },
+      {
+        "day": "Saturday",
+        "time": "17:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "01:15"
+      }
+    ]
+  },
+  {
+    "id": "bulgasal",
+    "name": "Bulgasal",
+    "description": "World boss Bulgasal.",
+    "icon_path": "icons/bulgasal.png",
+    "spawn_times": [
+      {
+        "day": "Monday",
+        "time": "03:00"
+      },
+      {
+        "day": "Monday",
+        "time": "20:00"
+      },
+      {
+        "day": "Tuesday",
+        "time": "20:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "01:15"
+      },
+      {
+        "day": "Wednesday",
+        "time": "17:00"
+      },
+      {
+        "day": "Thursday",
+        "time": "01:15"
+      },
+      {
+        "day": "Thursday",
+        "time": "20:00"
+      },
+      {
+        "day": "Friday",
+        "time": "03:00"
+      },
+      {
+        "day": "Friday",
+        "time": "23:15"
+      },
+      {
+        "day": "Saturday",
+        "time": "03:00"
+      },
+      {
+        "day": "Saturday",
+        "time": "20:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "03:00"
+      }
+    ]
+  },
+  {
+    "id": "kzarka",
+    "name": "Kzarka",
+    "description": "World boss Kzarka.",
+    "icon_path": "icons/kzarka.png",
+    "spawn_times": [
+      {
+        "day": "Monday",
+        "time": "06:00"
+      },
+      {
+        "day": "Monday",
+        "time": "10:00"
+      },
+      {
+        "day": "Monday",
+        "time": "23:15"
+      },
+      {
+        "day": "Tuesday",
+        "time": "06:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "01:15"
+      },
+      {
+        "day": "Wednesday",
+        "time": "06:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "23:15"
+      },
+      {
+        "day": "Thursday",
+        "time": "17:00"
+      },
+      {
+        "day": "Friday",
+        "time": "01:15"
+      },
+      {
+        "day": "Friday",
+        "time": "20:00"
+      },
+      {
+        "day": "Friday",
+        "time": "23:15"
+      },
+      {
+        "day": "Saturday",
+        "time": "20:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "03:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "13:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "23:15"
+      }
+    ]
+  },
+  {
+    "id": "offin",
+    "name": "Offin",
+    "description": "World boss Offin.",
+    "icon_path": "icons/offin.png",
+    "spawn_times": [
+      {
+        "day": "Monday",
+        "time": "13:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "17:00"
+      },
+      {
+        "day": "Saturday",
+        "time": "03:00"
+      }
+    ]
+  },
+  {
+    "id": "nouver",
+    "name": "Nouver",
+    "description": "World boss Nouver.",
+    "icon_path": "icons/nouver.png",
+    "spawn_times": [
+      {
+        "day": "Monday",
+        "time": "20:00"
+      },
+      {
+        "day": "Tuesday",
+        "time": "10:00"
+      },
+      {
+        "day": "Tuesday",
+        "time": "17:00"
+      },
+      {
+        "day": "Wednesday",
+        "time": "13:00"
+      },
+      {
+        "day": "Thursday",
+        "time": "01:15"
+      },
+      {
+        "day": "Thursday",
+        "time": "06:00"
+      },
+      {
+        "day": "Friday",
+        "time": "03:00"
+      },
+      {
+        "day": "Friday",
+        "time": "17:00"
+      },
+      {
+        "day": "Saturday",
+        "time": "06:00"
+      },
+      {
+        "day": "Saturday",
+        "time": "13:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "01:15"
+      },
+      {
+        "day": "Sunday",
+        "time": "10:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "23:15"
+      }
+    ]
+  },
+  {
+    "id": "golden_pig_king",
+    "name": "Golden Pig King",
+    "description": "World boss Golden Pig King.",
+    "icon_path": "icons/golden_pig_king.png",
+    "spawn_times": [
+      {
+        "day": "Monday",
+        "time": "20:00"
+      },
+      {
+        "day": "Tuesday",
+        "time": "01:15"
+      },
+      {
+        "day": "Tuesday",
+        "time": "17:00"
+      },
+      {
+        "day": "Tuesday",
+        "time": "23:15"
+      },
+      {
+        "day": "Wednesday",
+        "time": "03:00"
+      },
+      {
+        "day": "Thursday",
+        "time": "23:15"
+      },
+      {
+        "day": "Friday",
+        "time": "20:00"
+      },
+      {
+        "day": "Saturday",
+        "time": "01:15"
+      },
+      {
+        "day": "Saturday",
+        "time": "03:00"
+      },
+      {
+        "day": "Saturday",
+        "time": "17:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "01:15"
+      },
+      {
+        "day": "Sunday",
+        "time": "23:15"
+      }
+    ]
+  },
+  {
+    "id": "sangoon",
+    "name": "Sangoon",
+    "description": "World boss Sangoon.",
+    "icon_path": "icons/sangoon.png",
+    "spawn_times": [
+      {
+        "day": "Monday",
+        "time": "23:15"
+      },
+      {
+        "day": "Tuesday",
+        "time": "03:00"
+      },
+      {
+        "day": "Tuesday",
+        "time": "23:15"
+      },
+      {
+        "day": "Wednesday",
+        "time": "23:15"
+      },
+      {
+        "day": "Thursday",
+        "time": "03:00"
+      },
+      {
+        "day": "Thursday",
+        "time": "20:00"
+      },
+      {
+        "day": "Friday",
+        "time": "01:15"
+      },
+      {
+        "day": "Saturday",
+        "time": "01:15"
+      },
+      {
+        "day": "Saturday",
+        "time": "20:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "03:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "23:15"
+      }
+    ]
+  },
+  {
+    "id": "quint",
+    "name": "Quint",
+    "description": "World boss Quint.",
+    "icon_path": "icons/quint.png",
+    "spawn_times": [
+      {
+        "day": "Tuesday",
+        "time": "23:15"
+      },
+      {
+        "day": "Thursday",
+        "time": "23:15"
+      }
+    ]
+  },
+  {
+    "id": "muraka",
+    "name": "Muraka",
+    "description": "World boss Muraka.",
+    "icon_path": "icons/muraka.png",
+    "spawn_times": [
+      {
+        "day": "Tuesday",
+        "time": "23:15"
+      },
+      {
+        "day": "Thursday",
+        "time": "23:15"
+      }
+    ]
+  },
+  {
+    "id": "vell",
+    "name": "Vell",
+    "description": "World boss Vell.",
+    "icon_path": "icons/vell.png",
+    "spawn_times": [
+      {
+        "day": "Wednesday",
+        "time": "20:00"
+      },
+      {
+        "day": "Sunday",
+        "time": "17:00"
+      }
+    ]
+  },
+  {
+    "id": "black_shadow",
+    "name": "Black Shadow",
+    "description": "World boss Black Shadow.",
+    "icon_path": "icons/black_shadow.png",
+    "spawn_times": [
+      {
+        "day": "Saturday",
+        "time": "17:00"
+      }
+    ]
+  }
+]
