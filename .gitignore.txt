@@ -1,0 +1,50 @@
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/          # Crucial: Don't commit generated executables
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.coverage
+.tox/
+.nox/
+
+# PyInstaller / buildout
+*.pyi
+*.spec         # PyInstaller spec file
+
+# Editor directories and files
+.idea/                          # JetBrains IDEs (PyCharm, IntelliJ)
+.vscode/                        # VS Code (user settings, keep workspace settings if desired)
+*.swp                           # Vim swap files
+*~                              # Backup files
+.DS_Store                       # macOS
+Thumbs.db                       # Windows
+ehthumbs.db                     # Windows
+.directory                      # Linux/KDE directory customization
+
+# Virtual environment (if created in project root)
+.venv/
+venv/
+env/
+
+# User-specific data (should not be committed to repo)
+settings.txt
